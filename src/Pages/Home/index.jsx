@@ -10,7 +10,7 @@ function Home(){
     const [erroRepo, setErroRepo] = useState("")
     
     function buscarDados(dado){
-        setError("")
+        setError("")    
        api.get(dado)
        .then((response) => {
             if(apiDados.filter((item)=>item.id === response.data.id).length === 0){
