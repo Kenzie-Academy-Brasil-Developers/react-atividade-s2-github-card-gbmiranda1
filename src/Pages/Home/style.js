@@ -5,4 +5,5 @@ export const Div = styled.div`
     margin: auto;
     background-color: #EEF0F4;
     height:100vh;
+    padding: 10px;
 `;

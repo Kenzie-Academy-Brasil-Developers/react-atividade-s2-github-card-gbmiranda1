@@ -1,10 +1,16 @@
-import "./style"
+import ItemCard from "../itemCard"
 
 
-function Cards(){
-    
+function Cards({apiDados}){
+    console.log(apiDados)
     return(
-        <div></div>
+        <div>
+            {
+                apiDados.map((item) => (
+                    <ItemCard key={item.id} item={item}></ItemCard>
+                ))
+            }
+        </div>
     )
 }
 

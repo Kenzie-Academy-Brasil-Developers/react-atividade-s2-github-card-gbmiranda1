@@ -1,10 +1,11 @@
 import Routes from "./Routes"
+import {Container} from "./styleApp"
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
       <Routes></Routes>
-    </div>
+    </Container>
   );
 }
 

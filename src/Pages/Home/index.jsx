@@ -9,14 +9,15 @@ function Home(){
     
     function buscarDados(dado){
        api.get(dado)
-       .then((response) => setApiDados(...apiDados, response))
+       .then((response) => setApiDados([...apiDados, response.data]))
        .catch((err) => console.log(err))
     }
 
     return(
         <Div>
             <Header buscarDados={buscarDados} ></Header>
-            <Cards></Cards>
+            <Cards apiDados={apiDados}></Cards>
+            
         </Div>
     )
 }
