@@ -7,3 +7,9 @@ export const Div = styled.div`
     height:100vh;
     padding: 10px;
 `;
+
+export const Span = styled.span`
+    color: red;
+    margin: 0px 0px 10px 30px;
+
+`;

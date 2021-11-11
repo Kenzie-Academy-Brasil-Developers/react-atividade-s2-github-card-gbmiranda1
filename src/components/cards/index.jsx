@@ -1,16 +1,16 @@
 import ItemCard from "../itemCard"
-
+import {DivCard} from "./style"
 
 function Cards({apiDados}){
     console.log(apiDados)
     return(
-        <div>
+        <DivCard>
             {
                 apiDados.map((item) => (
                     <ItemCard key={item.id} item={item}></ItemCard>
                 ))
             }
-        </div>
+        </DivCard>
     )
 }
 

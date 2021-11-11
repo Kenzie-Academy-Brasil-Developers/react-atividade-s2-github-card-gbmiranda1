@@ -2,7 +2,7 @@ import {DivHeader, Input, Button} from "./style"
 import { useState } from "react"
 
 
-function Header({buscarDados}){
+function Header({buscarDados, error}){
     const [input, setInput] = useState("")
 
     return(
